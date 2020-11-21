@@ -4,7 +4,7 @@
 
 https://www.kaggle.com/c/GiveMeSomeCredit
 
-This is a supervised learning regression problem.
+This problem uses the Kaggle dataset about the credit repayment difficulty rates among customers. 
 
 ## Datasets
 
