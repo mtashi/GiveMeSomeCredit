@@ -7,7 +7,7 @@ https://www.kaggle.com/c/GiveMeSomeCredit
 This problem uses the Kaggle dataset about the credit repayment difficulty rates among customers. 
 
 ## Datasets
-
+#### SeriousDlqin2yrs: ##### Person experienced 90 days past due delinquency or worse (Target variable / label)
 ### Features distribution
 
 We plotted the distribution of features on the training and test datasets. There is no statistically significant difference between the datasets. For some plots we did not cover the entire range to improve legibility.
