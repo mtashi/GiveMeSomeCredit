@@ -40,6 +40,9 @@ Number of times borrower has been 60-89 days past due but no worse in the last 2
 #### NumberOfDependents:
 Number of dependents in family excluding themselves (spouse, children etc.)
 
+## Approach
+
+
 
 ### Features distribution
 
