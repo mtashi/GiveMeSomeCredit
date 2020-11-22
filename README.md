@@ -110,7 +110,6 @@ We analyzed the Pearson and Spearman correlations between the features. There ar
     0.120046028125 DebtRatio x NumberRealEstateLoansOrLines
 
 #### Training dataset, top 10 Spearman correlation coefficients
-
     0.472817452505 NumberOfOpenCreditLinesAndLoans x NumberRealEstateLoansOrLines
     0.400238543826 DebtRatio x NumberRealEstateLoansOrLines
     0.391131541 MonthlyIncome x NumberRealEstateLoansOrLines
