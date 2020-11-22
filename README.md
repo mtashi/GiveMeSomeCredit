@@ -41,7 +41,8 @@ Number of times borrower has been 60-89 days past due but no worse in the last 2
 Number of dependents in family excluding themselves (spouse, children etc.)
 
 ## Approach
-
+This problem can be treated as a binary calssification where the target is #### SeriousDlqin2yrs. 
+- First I analyzed the dataset. There are two C
 
 
 ### Features distribution
