@@ -39,10 +39,12 @@ Number of times borrower has been 60-89 days past due but no worse in the last 2
 Number of dependents in family excluding themselves (spouse, children etc.)
 
 ## Approach
-This problem can be treated as a binary calssification where the target is SeriousDlqin2yrs. 
-- First, I analyzed the dataset. There are two columns that have null variables. I filled out null values with most occurring value in the column. To reduce the prediction variable and boost the predictive capacity I group some of values in a few columns. 
-- Then, I used a few models to fit onto the models. As the dataset is very skewed, I resample the dataset to balance the dataset in combination with cross validation. 
-- I chose the ROC and PR curve to show the skill of the model. The highest accuracy achieved was about 78 percent with sklearn.ensemble.BaggingRegressor model.
-- The attached ipython shows every step and its results.
+This problem can be treated as a binary calssification where the target is SeriousDlqin2yrs with either 0 or 1 as its values. I mostly used SKlearn library on cpu. 
+- First, I analyzed and clean the dataset. There are two columns that have null values. I filled out null values with most occurring values in the column. Also, to reduce the prediction variables and boost the predictive capacity I grouped some of the values in a few features. 
+- Then, I used a few methods such as BaggingRegressor, RandomnForestclassifiers, ... to create a model. Since the dataset is very skewed therefore, I resampled the data to balance the dataset. I could not achieve notably higher accuracy, but I got a better PR curve representation. To test the effectiveness of the model I used cross validation. 
+- I chose the ROC and PR curves to depict the skill of the model. The highest accuracy achieved was about 79 percent with sklearn.ensemble.BaggingRegressor model.
+- The results are shown in the image below. Labels show the area under the curve as well as the accuracy of the model for each fold in the cross validation method. 
+- I attached the ipython which describes every step I used in data cleaning and modeling.
+- For further expermiment I would consider using XGBOOST library and NN methods. 
 
 ![PR_ROC](/PR_ROC_curve.png)
