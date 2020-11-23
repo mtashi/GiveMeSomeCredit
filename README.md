@@ -47,4 +47,4 @@ This problem can be treated as a binary calssification where the target is Serio
 - I chose the ROC and PR curve to show the skill of the model. The highest accuracy achieved was about 78 percent with sklearn.ensemble.BaggingRegressor model.
 - The attached ipython shows every step and its results.
 
-![PR_ROC](/Pr_ROC_curve.png)
+![PR_ROC](/PR_ROC_curve.png)
