@@ -44,6 +44,6 @@ Number of dependents in family excluding themselves (spouse, children etc.)
 This problem can be treated as a binary calssification where the target is #### SeriousDlqin2yrs. 
 - First, I analyzed the dataset. There are two columns that have null variables. I filled out null values with most occurring value in the column. To reduce the prediction variable and boost the predictive capacity I group some of values in a few columns. 
 - Then, I used a few models to fit onto the models. As the dataset is very skewed, I resample the dataset to balance the dataset in combination with cross validation. 
-- I chose the ROC and PR curve to show the skill of the model. The most accuracy achieved was about 68 percent with … model.
+- I chose the ROC and PR curve to show the skill of the model. The highest accuracy achieved was about 68 percent with … model.
 - The attached ipython shows every step and its results.
 
