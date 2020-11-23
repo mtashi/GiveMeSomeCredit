@@ -4,8 +4,8 @@ from detect_outliers import detect_outliers
 
 
 #reading the training and test data 
-train_data = pd.read_csv("C:/Users/lab/Desktop/Maryam/My_CV/applied_Jobs/Scotia Bank/GiveMeSomeCredit/cs-training.csv")
-test_data = pd.read_csv("C:/Users/lab/Desktop/Maryam/My_CV/applied_Jobs/Scotia Bank/GiveMeSomeCredit/cs-test.csv")
+train_data = pd.read_csv("/directory/to/the/data/cs-training.csv")
+test_data = pd.read_csv("/directory/to/the/data/cs-test.csv")
 
 # These are the numerical features present in the dataset
 Outliers_to_drop = detect_outliers(train_data,2,["RevolvingUtilizationOfUnsecuredLines",
@@ -65,6 +65,7 @@ X = train.drop( "SeriousDlqin2yrs",axis = 1)
 y= y.values
 X = X.values
 
-np.save('C:/Users/lab/Desktop/Maryam/My_CV/applied_Jobs/Scotia Bank/y.npy', y)
-np.save('C:/Users/lab/Desktop/Maryam/My_CV/applied_Jobs/Scotia Bank/X.npy', X)
+# saving the training data
+np.save('/directory/to/your/saved/data/y.npy', y)
+np.save('/directory/to/your/saved/data/X.npy', X)
 
