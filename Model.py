@@ -9,27 +9,24 @@ import matplotlib.pyplot as plt
 from over_under_sampling import over_under_sampling
 
 
-X = np.load('C:/Users/lab/Desktop/Maryam/My_CV/applied_Jobs/Scotia Bank/X.npy')
-y = np.load('C:/Users/lab/Desktop/Maryam/My_CV/applied_Jobs/Scotia Bank/y.npy')
+X = np.load('/directory/to/the/saved/data/X.npy')
+y = np.load('/directory/to/the/saved/data/y.npy')
 
 
 # Using the Cross validation 
-
 k_fold = KFold(n_splits=2, shuffle=True, random_state=0)
 
 # different models
 
-# Random Forest
+# Random Forest---
 #model = RandomForestClassifier(n_estimators= 300, random_state = 20)
 
-# SVM
+# SVM---
 # model = SVC(C=1.0, kernel='linear', degree=3, coef0=0.0, shrinking=True,
 #            probability=True,tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1,
 #            decision_function_shape='ovo', random_state=None)
 
-#model = SVC(kernel='linear')
-
-# Bagging Regressor
+# Bagging Regressor---
 model = sklearn.ensemble.BaggingRegressor(base_estimator=sklearn.ensemble.GradientBoostingRegressor(max_depth=4,
                                             n_estimators=130),
                                           n_estimators=30)
@@ -39,7 +36,7 @@ model = sklearn.ensemble.BaggingRegressor(base_estimator=sklearn.ensemble.Gradie
 # plotting pr and roc curve
 f, axes = plt.subplots(1, 2, figsize=(10, 5))
 
-# need this initialization to get the PR curve in cross validation 
+# need this initialization to get the PR and ROC curve in cross validation 
 y_real = []
 y_proba = []
 y_pred=[]
@@ -117,5 +114,5 @@ axes[1].set_ylabel('True Positive Rate')
 axes[1].legend(loc='lower left', fontsize='small')
 
 f.tight_layout()
-f.savefig('C:/Users/lab/Desktop/Maryam/My_CV/applied_Jobs/Scotia Bank/GiveMeSomeCredit/Pr_ROC_curve.png')
+f.savefig('/your/directory/Pr_ROC_curve.png')
 
