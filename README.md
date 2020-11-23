@@ -47,3 +47,4 @@ This problem can be treated as a binary calssification where the target is Serio
 - I chose the ROC and PR curve to show the skill of the model. The highest accuracy achieved was about 68 percent with … model.
 - The attached ipython shows every step and its results.
 
+![alt text](C:/Users/lab/Desktop/Maryam/My_CV/applied_Jobs/Scotia Bank/GiveMeSomeCredit/Pr_ROC_curve.png)
