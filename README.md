@@ -1,5 +1,3 @@
-# Analysis
-
 ## Problem
 
 https://www.kaggle.com/c/GiveMeSomeCredit
