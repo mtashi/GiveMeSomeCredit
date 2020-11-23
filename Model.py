@@ -116,3 +116,6 @@ axes[1].legend(loc='lower left', fontsize='small')
 f.tight_layout()
 f.savefig('/your/directory/Pr_ROC_curve.png')
 
+# the final results 
+test_data['Probability'] = model.predict(test)
+test_data.to_csv('/out/submission.csv')
