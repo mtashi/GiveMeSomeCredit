@@ -13,7 +13,7 @@ def detect_outliers(df,n,features):
         Q3 = np.percentile(df[col],75)
         
         # Interquartile range (IQR)
-        # thisi s smilar to Z score
+        # this is smilar to Z score
         IQR = Q3 - Q1
         outlier_step = 1.5 * IQR
         
