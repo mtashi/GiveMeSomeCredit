@@ -29,6 +29,7 @@ def over_under_sampling (Xtrain,ytrain,Xtest,ytest):
     # fit and apply the transform
     Xtest, ytest = under.fit_resample(Xtest_over,ytest_over)
     # summarize class distribution
+    
     #print(Counter(ytest))
     
     return Xtrain , ytrain , Xtest, ytest
